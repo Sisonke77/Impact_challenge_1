@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Scanner;
 
 public class Impact_challenge_1 {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
         String numbers = myObj.nextLine();
         myObj.close();
