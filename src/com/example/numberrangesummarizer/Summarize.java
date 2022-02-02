@@ -14,15 +14,15 @@ public class Summarize implements NumberRangeSummarizer{
             Integer conv = Integer.valueOf(numb);
             Numbers.add(conv);
         }
-
         return Numbers;
     }
 
     @Override
-    public String summarizeCollection(Collection<Integer> input) {
+    public String summarizeCollection(Collection<Integer> input){
         Integer[] Input = input.toArray(new Integer[input.size()]);
         StringBuilder Final_str = new StringBuilder();
         int Range = 0;
+
         for(int i = 0; i<Input.length; i++){
             if(i == Input.length-1){
                 if(Range !=0){
@@ -52,6 +52,8 @@ public class Summarize implements NumberRangeSummarizer{
                 }
             }
         }
+
+
         return Final_str.toString();
     }
 }
